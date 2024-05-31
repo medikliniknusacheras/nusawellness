@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nusa Wellness Screening Packages</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+        }
+        header {
+            background-color: white;
+            text-align: center;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header img {
+            width: 200px;
+        }
+        .content {
+            padding: 20px;
+            margin-bottom: 100px; /* Ensure content is not obscured by the footer */
+        }
+        .package {
+            margin-bottom: 40px;
+        }
+        .package h2 {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .package table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .package th, .package td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        .package th {
+            background-color: #f2f2f2;
+        }
+        .explanation {
+            margin-top: 20px;
+        }
+        footer {
+            background-color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        footer button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://i.imgur.com/5a9FfvH.png" alt="Nusa Wellness Logo">
+    </header>
+
+    <div class="content" id="content">
+        <div class="package">
+            <h2>Nusa Wellness Package - RM 888</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Profile Tests</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Full Blood Examination</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Red Blood Cells (RBC)</td>
+                    </tr>
+                    <tr>
+                        <td>Haemoglobin (Hb)</td>
+                    </tr>
+                    <tr>
+                        <td>Red Cell Indices (MCH, MCV, MCHC, PCV)</td>
+                    </tr>
+                    <tr>
+                        <td>Platelet Count</td>
+                    </tr>
+                    <tr>
+                        <td>White Blood Cells (WBC)</td>
+                    </tr>
+                    <tr>
+                        <td>Differential Count (DC)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Renal Function Test</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Urea</td>
+                    </tr>
+                    <tr>
+                        <td>Sodium</td>
+                    </tr>
+                    <tr>
+                        <td>Potassium</td>
+                    </tr>
+                    <tr>
+                        <td>Chloride</td>
+                    </tr>
+                    <tr>
+                        <td>Creatinine</td>
+                    </tr>
+                    <tr>
+                        <td>Estimated - GFR (CKD-EPI)</td>
+                    </tr>
+                    <tr>
+                        <td>Calcium</td>
+                    </tr>
+                    <tr>
+                        <td>Corrected Calcium</td>
+                    </tr>
+                    <tr>
+                        <td>Phosphate</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gout</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Uric Acid</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Diabetic Screen</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Glucose</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Liver Function Test</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Total Protein</td>
+                    </tr>
+                    <tr>
+                        <td>Albumin</td>
+                    </tr>
+                    <tr>
+                        <td>Globulin</td>
+                    </tr>
+                    <tr>
+                        <td>Albumin/Globulin Ratio</td>
+                    </tr>
+                    <tr>
+                        <td>Total Bilirubin</td>
+                    </tr>
+                    <tr>
+                        <td>Alkaline Phosphatase (ALP)</td>
+                    </tr>
+                    <tr>
+                        <td>Alanine Transaminase (ALT/SGPT)</td>
+                    </tr>
+                    <tr>
+                        <td>Aspartate Transaminase (AST/SGOT)</td>
+                    </tr>
+                    <tr>
+                        <td>Gamma-Glutamyl Transferase (GGT)</td>
+                    </tr>
+                    <tr>
+                        <td>Fibrosis 4 Index (FIB4)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lipid Profile</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Total Cholesterol</td>
+                    </tr>
+                    <tr>
+                        <td>HDL-Cholesterol</td>
+                    </tr>
+                    <tr>
+                        <td>LDL-Cholesterol</td>
+                    </tr>
+                    <tr>
+                        <td>Triglycerides</td>
+                    </tr>
+                    <tr>
+                        <td>Total Chol/HDL Ratio</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Urine Examination</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Urine FEME</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Endocrinology</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Free T3 (FT3)</td>
+                    </tr>
+                    <tr>
+                        <td>Free T4 (FT4)</td>
+                    </tr>
+                    <tr>
+                        <td>Thyroid Stimulating Hormone (TSH)</td>
+                    </tr>
+                    <tr>
+                        <td>Insulin Growth Factor 1 (IGF-1)</td>
+                    </tr>
+                    <tr>
+                        <td>Cortisol (AM/PM)</td>
+                    </tr>
+                    <tr>
+                        <td>DHEA-Sulphate</td>
+                    </tr>
+                    <tr>
+                        <td>Estradiol</td>
+                    </tr>
+                    <tr>
+                        <td>Progesterone</td>
+                    </tr>
+                    <tr>
+                        <td>Sex Hormone Binding Globulin (SHBG)</td>
+                    </tr>
+                    <tr>
+                        <td>Testosterone</td>
+                    </tr>
+                    <tr>
+                        <td>Serum Insulin</td>
+                    </tr>
+                    <tr>
+                        <td>Growth Hormone</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Others</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Vitamin D</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="package">
+            <h2>Nusa Premium Package - RM 1088</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Profile Tests</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Haematology</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Haemoglobin (Hb)</td>
+                    </tr>
+                    <tr>
+                        <td>Red Blood Cells (RBC)</td>
+                    </tr>
+                    <tr>
+                        <td>Red Cell Indices (MCH, MCV, MCHC, PCV)</td>
+                    </tr>
+                    <tr>
+                        <td>Platelet Count</td>
+                    </tr>
+                    <tr>
+                        <td>White Blood Cells (WBC)</td>
+                    </tr>
+                    <tr>
+                        <td>Differential Count (DC)</td>
+                    </tr>
+                    <tr>
+                        <td>Peripheral Blood Film (PBF)</td>
+                    </tr>
+                    <tr>
+                        <td>Erythrocyte Sedimentation Rate (ESR)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Renal Function Test</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Urea</td>
+                    </tr>
+                    <tr>
+                        <td>Uric Acid</td>
+                    </tr>
+                    <tr>
+                        <td>Sodium</td>
+                    </tr>
+                    <tr>
+                        <td>Potassium</td>
+                    </tr>
+                    <tr>
+                        <td>Chloride</td>
+                    </tr>
+                    <tr>
+                        <td>Creatinine</td>
+                    </tr>
+                    <tr>
+                        <td>Calcium</td>
+                    </tr>
+                    <tr>
+                        <td>Corrected Calcium</td>
+                    </tr>
+                    <tr>
+                        <td>Phosphate</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Diabetic Screen</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Glucose</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Liver Function Test</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Total Protein</td>
+                    </tr>
+                    <tr>
+                        <td>Albumin</td>
+                    </tr>
+                    <tr>
+                        <td>Globulin</td>
+                    </tr>
+                    <tr>
+                        <td>Albumin/Globulin Ratio</td>
+                    </tr>
+                    <tr>
+                        <td>Total Bilirubin</td>
+                    </tr>
+                    <tr>
+                        <td>Alkaline Phosphatase (ALP)</td>
+                    </tr>
+                    <tr>
+                        <td>Alanine Transaminase (ALT/SGPT)</td>
+                    </tr>
+                    <tr>
+                        <td>Aspartate Transaminase (AST/SGOT)</td>
+                    </tr>
+                    <tr>
+                        <td>Gamma-Glutamyl Transferase (GGT)</td>
+                    </tr>
+                    <tr>
+                        <td>Fibrosis 4 Index (FIB4)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lipid Profile</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Total Cholesterol</td>
+                    </tr>
+                    <tr>
+                        <td>HDL-Cholesterol</td>
+                    </tr>
+                    <tr>
+                        <td>LDL-Cholesterol</td>
+                    </tr>
+                    <tr>
+                        <td>Triglycerides</td>
+                    </tr>
+                    <tr>
+                        <td>Total Chol/HDL Ratio</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Endocrinology</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Free T3 (FT3)</td>
+                    </tr>
+                    <tr>
+                        <td>Free T4 (FT4)</td>
+                    </tr>
+                    <tr>
+                        <td>Thyroid Stimulating Hormone (TSH)</td>
+                    </tr>
+                    <tr>
+                        <td>Insulin Growth Factor 1 (IGF-1)</td>
+                    </tr>
+                    <tr>
+                        <td>Cortisol (AM/PM)</td>
+                    </tr>
+                    <tr>
+                        <td>DHEA-Sulphate</td>
+                    </tr>
+                    <tr>
+                        <td>Estradiol</td>
+                    </tr>
+                    <tr>
+                        <td>Progesterone</td>
+                    </tr>
+                    <tr>
+                        <td>Sex Hormone Binding Globulin (SHBG)</td>
+                    </tr>
+                    <tr>
+                        <td>Testosterone</td>
+                    </tr>
+                    <tr>
+                        <td>Insulin</td>
+                    </tr>
+                    <tr>
+                        <td>Luteinizing Hormone (LH)</td>
+                    </tr>
+                    <tr>
+                        <td>Follicle Stimulating Hormone (FSH)</td>
+                    </tr>
+                    <tr>
+                        <td>Prolactin</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tumor Markers</strong></td>
+                    </tr>
+                    <tr>
+                        <td>CEA</td>
+                    </tr>
+                    <tr>
+                        <td>AFP</td>
+                    </tr>
+                    <tr>
+                        <td>CA 125</td>
+                    </tr>
+                    <tr>
+                        <td>CA 15-3</td>
+                    </tr>
+                    <tr>
+                        <td>CA 19-9</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Additional Tests</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Hs-CRP</td>
+                    </tr>
+                    <tr>
+                        <td>Homocysteine</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Urine Examination</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Urine FEME</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="explanation" id="explanation">
+            <h3>Explanations:</h3>
+            <p><strong>Red Blood Cells (RBC)</strong>: Measures the number of red blood cells in your blood, which carry oxygen.</p>
+            <p><strong>Haemoglobin (Hb)</strong>: The protein in red blood cells that carries oxygen.</p>
+            <p><strong>Red Cell Indices</strong>: Includes MCH, MCV, MCHC, and PCV to evaluate the size and hemoglobin content of red blood cells.</p>
+            <p><strong>Platelet Count</strong>: Measures the number of platelets, which help with blood clotting.</p>
+            <p><strong>White Blood Cells (WBC)</strong>: Measures the number of white blood cells, which fight infection.</p>
+            <p><strong>Differential Count (DC)</strong>: Breaks down the different types of white blood cells.</p>
+            <p><strong>Peripheral Blood Film (PBF)</strong>: Examines the physical characteristics of blood cells under a microscope.</p>
+            <p><strong>Erythrocyte Sedimentation Rate (ESR)</strong>: Measures how quickly red blood cells settle at the bottom of a test tube; can indicate inflammation.</p>
+            <p><strong>Urea, Sodium, Potassium, Chloride, Creatinine</strong>: Tests for kidney function and electrolyte balance.</p>
+            <p><strong>Estimated - GFR (CKD-EPI)</strong>: Estimates kidney filtration rate.</p>
+            <p><strong>Calcium, Corrected Calcium, Phosphate</strong>: Tests for bone health and metabolism.</p>
+            <p><strong>Uric Acid</strong>: Tests for gout.</p>
+            <p><strong>Glucose</strong>: Screens for diabetes.</p>
+            <p><strong>Total Protein, Albumin, Globulin</strong>: Measures proteins in the blood to assess liver function and overall health.</p>
+            <p><strong>Albumin/Globulin Ratio</strong>: The ratio of albumin to globulin proteins in the blood.</p>
+            <p><strong>Total Bilirubin</strong>: Measures bilirubin levels, which can indicate liver or bile duct problems.</p>
+            <p><strong>Alkaline Phosphatase (ALP)</strong>: An enzyme related to the bile ducts; often increased when they are blocked.</p>
+            <p><strong>Alanine Transaminase (ALT/SGPT), Aspartate Transaminase (AST/SGOT)</strong>: Enzymes that help diagnose liver damage.</p>
+            <p><strong>Gamma-Glutamyl Transferase (GGT)</strong>: Enzyme that helps detect liver and bile duct injury.</p>
+            <p><strong>Fibrosis 4 Index (FIB4)</strong>: A non-invasive scoring system to estimate the amount of liver scarring.</p>
+            <p><strong>Total Cholesterol, HDL-Cholesterol, LDL-Cholesterol, Triglycerides</strong>: Measures lipids in the blood to assess heart disease risk.</p>
+            <p><strong>Total Chol/HDL Ratio</strong>: The ratio of total cholesterol to HDL cholesterol, an indicator of heart disease risk.</p>
+            <p><strong>Urine FEME</strong>: A comprehensive urine test for detecting urinary tract infections and other abnormalities.</p>
+            <p><strong>Free T3 (FT3), Free T4 (FT4), Thyroid Stimulating Hormone (TSH)</strong>: Tests for thyroid function.</p>
+            <p><strong>Insulin Growth Factor 1 (IGF-1)</strong>: A hormone important for growth and development, related to pituitary function.</p>
+            <p><strong>Cortisol (AM/PM)</strong>: Measures adrenal gland function and stress response.</p>
+            <p><strong>DHEA-Sulphate</strong>: A hormone produced by the adrenal glands, important for assessing adrenal function.</p>
+            <p><strong>Estradiol, Progesterone, Testosterone</strong>: Hormones important for reproductive health.</p>
+            <p><strong>Sex Hormone Binding Globulin (SHBG)</strong>: A protein that binds to sex hormones, such as testosterone and estradiol.</p>
+            <p><strong>Serum Insulin</strong>: Measures the amount of insulin in the blood, important for diabetes diagnosis and management.</p>
+            <p><strong>Growth Hormone</strong>: Measures the amount of growth hormone in the blood, important for growth and metabolism.</p>
+            <p><strong>Vitamin D</strong>: Measures the level of Vitamin D in the blood, important for bone health and immune function.</p>
+            <p><strong>Luteinizing Hormone (LH)</strong>: Helps regulate the function of the ovaries and testes.</p>
+            <p><strong>Follicle Stimulating Hormone (FSH)</strong>: Important for the growth and maturation of eggs in women and sperm production in men.</p>
+            <p><strong>Prolactin</strong>: A hormone that stimulates milk production after childbirth.</p>
+            <p><strong>CEA (Carcinoembryonic Antigen)</strong>: A marker that can indicate certain types of cancer.</p>
+            <p><strong>AFP (Alpha-fetoprotein)</strong>: A marker used to detect liver cancer and other diseases.</p>
+            <p><strong>CA 125</strong>: A marker often used to detect ovarian cancer.</p>
+            <p><strong>CA 15-3</strong>: A marker used to monitor breast cancer.</p>
+            <p><strong>CA 19-9</strong>: A marker used primarily to monitor pancreatic cancer.</p>
+            <p><strong>Hs-CRP (High-sensitivity C-Reactive Protein)</strong>: A marker for inflammation in the body.</p>
+            <p><strong>Homocysteine</strong>: An amino acid linked to higher risk of coronary artery disease.</p>
+        </div>
+    </div>
+
+    <footer>
+        <button onclick="changeLanguage('en')">English</button>
+        <button onclick="changeLanguage('zh')">中文</button>
+        <button onclick="changeLanguage('ms')">Malay</button>
+    </footer>
+
+    <script>
+        function changeLanguage(language) {
+            const explanations = document.getElementById('explanation');
+            if (language === 'en') {
+                explanations.innerHTML = `
+                    <h3>Explanations:</h3>
+                    <p><strong>Red Blood Cells (RBC)</strong>: Measures the number of red blood cells in your blood, which carry oxygen.</p>
+                    <p><strong>Haemoglobin (Hb)</strong>: The protein in red blood cells that carries oxygen.</p>
+                    <p><strong>Red Cell Indices</strong>: Includes MCH, MCV, MCHC, and PCV to evaluate the size and hemoglobin content of red blood cells.</p>
+                    <p><strong>Platelet Count</strong>: Measures the number of platelets, which help with blood clotting.</p>
+                    <p><strong>White Blood Cells (WBC)</strong>: Measures the number of white blood cells, which fight infection.</p>
+                    <p><strong>Differential Count (DC)</strong>: Breaks down the different types of white blood cells.</p>
+                    <p><strong>Peripheral Blood Film (PBF)</strong>: Examines the physical characteristics of blood cells under a microscope.</p>
+                    <p><strong>Erythrocyte Sedimentation Rate (ESR)</strong>: Measures how quickly red blood cells settle at the bottom of a test tube; can indicate inflammation.</p>
+                    <p><strong>Urea, Sodium, Potassium, Chloride, Creatinine</strong>: Tests for kidney function and electrolyte balance.</p>
+                    <p><strong>Estimated - GFR (CKD-EPI)</strong>: Estimates kidney filtration rate.</p>
+                    <p><strong>Calcium, Corrected Calcium, Phosphate</strong>: Tests for bone health and metabolism.</p>
+                    <p><strong>Uric Acid</strong>: Tests for gout.</p>
+                    <p><strong>Glucose</strong>: Screens for diabetes.</p>
+                    <p><strong>Total Protein, Albumin, Globulin</strong>: Measures proteins in the blood to assess liver function and overall health.</p>
+                    <p><strong>Albumin/Globulin Ratio</strong>: The ratio of albumin to globulin proteins in the blood.</p>
+                    <p><strong>Total Bilirubin</strong>: Measures bilirubin levels, which can indicate liver or bile duct problems.</p>
+                    <p><strong>Alkaline Phosphatase (ALP)</strong>: An enzyme related to the bile ducts; often increased when they are blocked.</p>
+                    <p><strong>Alanine Transaminase (ALT/SGPT), Aspartate Transaminase (AST/SGOT)</strong>: Enzymes that help diagnose liver damage.</p>
+                    <p><strong>Gamma-Glutamyl Transferase (GGT)</strong>: Enzyme that helps detect liver and bile duct injury.</p>
+                    <p><strong>Fibrosis 4 Index (FIB4)</strong>: A non-invasive scoring system to estimate the amount of liver scarring.</p>
+                    <p><strong>Total Cholesterol, HDL-Cholesterol, LDL-Cholesterol, Triglycerides</strong>: Measures lipids in the blood to assess heart disease risk.</p>
+                    <p><strong>Total Chol/HDL Ratio</strong>: The ratio of total cholesterol to HDL cholesterol, an indicator of heart disease risk.</p>
+                    <p><strong>Urine FEME</strong>: A comprehensive urine test for detecting urinary tract infections and other abnormalities.</p>
+                    <p><strong>Free T3 (FT3), Free T4 (FT4), Thyroid Stimulating Hormone (TSH)</strong>: Tests for thyroid function.</p>
+                    <p><strong>Insulin Growth Factor 1 (IGF-1)</strong>: A hormone important for growth and development, related to pituitary function.</p>
+                    <p><strong>Cortisol (AM/PM)</strong>: Measures adrenal gland function and stress response.</p>
+                    <p><strong>DHEA-Sulphate</strong>: A hormone produced by the adrenal glands, important for assessing adrenal function.</p>
+                    <p><strong>Estradiol, Progesterone, Testosterone</strong>: Hormones important for reproductive health.</p>
+                    <p><strong>Sex Hormone Binding Globulin (SHBG)</strong>: A protein that binds to sex hormones, such as testosterone and estradiol.</p>
+                    <p><strong>Serum Insulin</strong>: Measures the amount of insulin in the blood, important for diabetes diagnosis and management.</p>
+                    <p><strong>Growth Hormone</strong>: Measures the amount of growth hormone in the blood, important for growth and metabolism.</p>
+                    <p><strong>Vitamin D</strong>: Measures the level of Vitamin D in the blood, important for bone health and immune function.</p>
+                    <p><strong>Luteinizing Hormone (LH)</strong>: Helps regulate the function of the ovaries and testes.</p>
+                    <p><strong>Follicle Stimulating Hormone (FSH)</strong>: Important for the growth and maturation of eggs in women and sperm production in men.</p>
+                    <p><strong>Prolactin</strong>: A hormone that stimulates milk production after childbirth.</p>
+                    <p><strong>CEA (Carcinoembryonic Antigen)</strong>: A marker that can indicate certain types of cancer.</p>
+                    <p><strong>AFP (Alpha-fetoprotein)</strong>: A marker used to detect liver cancer and other diseases.</p>
+                    <p><strong>CA 125</strong>: A marker often used to detect ovarian cancer.</p>
+                    <p><strong>CA 15-3</strong>: A marker used to monitor breast cancer.</p>
+                    <p><strong>CA 19-9</strong>: A marker used primarily to monitor pancreatic cancer.</p>
+                    <p><strong>Hs-CRP (High-sensitivity C-Reactive Protein)</strong>: A marker for inflammation in the body.</p>
+                    <p><strong>Homocysteine</strong>: An amino acid linked to higher risk of coronary artery disease.</p>
+                `;
+            } else if (language === 'zh') {
+                explanations.innerHTML = `
+                    <h3>解释：</h3>
+                    <p><strong>红细胞（RBC）</strong>：测量血液中的红细胞数量，红细胞携带氧气。</p>
+                    <p><strong>血红蛋白（Hb）</strong>：红细胞中的蛋白质，携带氧气。</p>
+                    <p><strong>红细胞指数</strong>：包括MCH、MCV、MCHC和PCV，用于评估红细胞的大小和血红蛋白含量。</p>
+                    <p><strong>血小板计数</strong>：测量血小板数量，血小板帮助凝血。</p>
+                    <p><strong>白细胞（WBC）</strong>：测量白细胞数量，白细胞对抗感染。</p>
+                    <p><strong>白细胞分类计数（DC）</strong>：分解不同类型的白细胞。</p>
+                    <p><strong>外周血涂片（PBF）</strong>：在显微镜下检查血细胞的物理特征。</p>
+                    <p><strong>红细胞沉降率（ESR）</strong>：测量红细胞在试管底部沉降的速度，可以指示炎症。</p>
+                    <p><strong>尿素、钠、钾、氯、肌酐</strong>：测试肾功能和电解质平衡。</p>
+                    <p><strong>估算的肾小球滤过率（CKD-EPI）</strong>：估算肾脏的过滤率。</p>
+                    <p><strong>钙、校正钙、磷酸盐</strong>：测试骨健康和代谢。</p>
+                    <p><strong>尿酸</strong>：测试痛风。</p>
+                    <p><strong>葡萄糖</strong>：筛查糖尿病。</p>
+                    <p><strong>总蛋白、白蛋白、球蛋白</strong>：测量血液中的蛋白质以评估肝功能和整体健康。</p>
+                    <p><strong>白蛋白/球蛋白比率</strong>：血液中白蛋白与球蛋白的比率。</p>
+                    <p><strong>总胆红素</strong>：测量胆红素水平，可以指示肝脏或胆管问题。</p>
+                    <p><strong>碱性磷酸酶（ALP）</strong>：一种与胆管相关的酶；当胆管阻塞时通常增加。</p>
+                    <p><strong>丙氨酸转氨酶（ALT/SGPT）、天冬氨酸转氨酶（AST/SGOT）</strong>：帮助诊断肝损伤的酶。</p>
+                    <p><strong>谷氨酰转肽酶（GGT）</strong>：帮助检测肝脏和胆管损伤的酶。</p>
+                    <p><strong>纤维化4指数（FIB4）</strong>：一种非侵入性评分系统，用于估算肝脏纤维化的程度。</p>
+                    <p><strong>总胆固醇、高密度脂蛋白胆固醇（HDL）、低密度脂蛋白胆固醇（LDL）、甘油三酯</strong>：测量血液中的脂质以评估心脏病风险。</p>
+                    <p><strong>总胆固醇/HDL比率</strong>：总胆固醇与高密度脂蛋白胆固醇的比率，是心脏病风险的指标。</p>
+                    <p><strong>尿常规</strong>：全面的尿液测试，用于检测尿路感染和其他异常。</p>
+                    <p><strong>游离T3（FT3）、游离T4（FT4）、促甲状腺激素（TSH）</strong>：测试甲状腺功能。</p>
+                    <p><strong>胰岛素生长因子1（IGF-1）</strong>：一种重要的激素，与垂体功能有关。</p>
+                    <p><strong>皮质醇（早晚）</strong>：测量肾上腺功能和应激反应。</p>
+                    <p><strong>脱氢表雄酮硫酸盐（DHEA-S）</strong>：由肾上腺生成的激素，评估肾上腺功能。</p>
+                    <p><strong>雌二醇、孕酮、睾酮</strong>：重要的生殖健康激素。</p>
+                    <p><strong>性激素结合球蛋白（SHBG）</strong>：一种与性激素结合的蛋白质，如睾酮和雌二醇。</p>
+                    <p><strong>血清胰岛素</strong>：测量血液中的胰岛素量，对糖尿病的诊断和管理很重要。</p>
+                    <p><strong>生长激素</strong>：测量血液中的生长激素量，对生长和代谢很重要。</p>
+                    <p><strong>维生素D</strong>：测量血液中的维生素D水平，对骨骼健康和免疫功能很重要。</p>
+                    <p><strong>黄体生成素（LH）</strong>：帮助调节卵巢和睾丸的功能。</p>
+                    <p><strong>促卵泡激素（FSH）</strong>：对女性的卵子生长和成熟以及男性的精子生成很重要。</p>
+                    <p><strong>催乳素</strong>：一种在分娩后刺激乳汁生成的激素。</p>
+                    <p><strong>癌胚抗原（CEA）</strong>：一种可以指示某些类型癌症的标志物。</p>
+                    <p><strong>甲胎蛋白（AFP）</strong>：一种用于检测肝癌和其他疾病的标志物。</p>
+                    <p><strong>CA 125</strong>：一种常用于检测卵巢癌的标志物。</p>
+                    <p><strong>CA 15-3</strong>：一种用于监测乳腺癌的标志物。</p>
+                    <p><strong>CA 19-9</strong>：一种主要用于监测胰腺癌的标志物。</p>
+                    <p><strong>高敏C反应蛋白（Hs-CRP）</strong>：一种身体炎症的标志物。</p>
+                    <p><strong>同型半胱氨酸</strong>：一种与冠心病风险增加相关的氨基酸。</p>
+                `;
+            } else if (language === 'ms') {
+                explanations.innerHTML = `
+                    <h3>Penjelasan:</h3>
+                    <p><strong>Sel Darah Merah (RBC)</strong>: Mengukur bilangan sel darah merah dalam darah anda, yang membawa oksigen.</p>
+                    <p><strong>Hemoglobin (Hb)</strong>: Protein dalam sel darah merah yang membawa oksigen.</p>
+                    <p><strong>Indeks Sel Merah</strong>: Termasuk MCH, MCV, MCHC, dan PCV untuk menilai saiz dan kandungan hemoglobin sel darah merah.</p>
+                    <p><strong>Kiraan Platelet</strong>: Mengukur bilangan platelet, yang membantu pembekuan darah.</p>
+                    <p><strong>Sel Darah Putih (WBC)</strong>: Mengukur bilangan sel darah putih, yang melawan jangkitan.</p>
+                    <p><strong>Kiraan Diferensial (DC)</strong>: Memecahkan jenis-jenis sel darah putih yang berbeza.</p>
+                    <p><strong>Filem Darah Periferal (PBF)</strong>: Memeriksa ciri-ciri fizikal sel darah di bawah mikroskop.</p>
+                    <p><strong>Kadar Pemendapan Erythrocyte (ESR)</strong>: Mengukur seberapa cepat sel darah merah menetap di bahagian bawah tiub ujian; boleh menunjukkan keradangan.</p>
+                    <p><strong>Urea, Natrium, Kalium, Klorida, Kreatinin</strong>: Ujian untuk fungsi buah pinggang dan keseimbangan elektrolit.</p>
+                    <p><strong>GFR Taksiran (CKD-EPI)</strong>: Menganggarkan kadar penapisan buah pinggang.</p>
+                    <p><strong>Kalsium, Kalsium Diperbetulkan, Fosfat</strong>: Ujian untuk kesihatan tulang dan metabolisme.</p>
+                    <p><strong>Asid Urik</strong>: Ujian untuk gout.</p>
+                    <p><strong>Glukosa</strong>: Saringan untuk diabetes.</p>
+                    <p><strong>Jumlah Protein, Albumin, Globulin</strong>: Mengukur protein dalam darah untuk menilai fungsi hati dan kesihatan keseluruhan.</p>
+                    <p><strong>Nisbah Albumin/Globulin</strong>: Nisbah albumin kepada globulin dalam darah.</p>
+                    <p><strong>Jumlah Bilirubin</strong>: Mengukur tahap bilirubin, yang boleh menunjukkan masalah hati atau saluran empedu.</p>
+                    <p><strong>Fosfatase Alkali (ALP)</strong>: Enzim yang berkaitan dengan saluran empedu; sering meningkat apabila ia disekat.</p>
+                    <p><strong>Alanine Transaminase (ALT/SGPT), Aspartate Transaminase (AST/SGOT)</strong>: Enzim yang membantu mendiagnosis kerosakan hati.</p>
+                    <p><strong>Gamma-Glutamyl Transferase (GGT)</strong>: Enzim yang membantu mengesan kecederaan hati dan saluran empedu.</p>
+                    <p><strong>Indeks Fibrosis 4 (FIB4)</strong>: Sistem penilaian tidak invasif untuk menganggarkan jumlah parut hati.</p>
+                    <p><strong>Jumlah Kolesterol, HDL-Kolesterol, LDL-Kolesterol, Trigliserida</strong>: Mengukur lipid dalam darah untuk menilai risiko penyakit jantung.</p>
+                    <p><strong>Nisbah Kolesterol Jumlah/HDL</strong>: Nisbah kolesterol total kepada HDL, penunjuk risiko penyakit jantung.</p>
+                    <p><strong>FEME Urin</strong>: Ujian urin yang komprehensif untuk mengesan jangkitan saluran kencing dan keabnormalan lain.</p>
+                    <p><strong>Free T3 (FT3), Free T4 (FT4), Hormon Perangsang Tiroid (TSH)</strong>: Ujian untuk fungsi tiroid.</p>
+                    <p><strong>Faktor Pertumbuhan Insulin 1 (IGF-1)</strong>: Hormon yang penting untuk pertumbuhan dan perkembangan, berkaitan dengan fungsi pituitari.</p>
+                    <p><strong>Kortisol (AM/PM)</strong>: Mengukur fungsi kelenjar adrenal dan tindak balas tekanan.</p>
+                    <p><strong>DHEA-Sulfat</strong>: Hormon yang dihasilkan oleh kelenjar adrenal, penting untuk menilai fungsi adrenal.</p>
+                    <p><strong>Estradiol, Progesteron, Testosteron</strong>: Hormon penting untuk kesihatan reproduktif.</p>
+                    <p><strong>Globulin Pengikat Hormon Seks (SHBG)</strong>: Protein yang mengikat hormon seks, seperti testosteron dan estradiol.</p>
+                    <p><strong>Insulin Serum</strong>: Mengukur jumlah insulin dalam darah, penting untuk diagnosis dan pengurusan diabetes.</p>
+                    <p><strong>Hormon Pertumbuhan</strong>: Mengukur jumlah hormon pertumbuhan dalam darah, penting untuk pertumbuhan dan metabolisme.</p>
+                    <p><strong>Vitamin D</strong>: Mengukur tahap Vitamin D dalam darah, penting untuk kesihatan tulang dan fungsi imun.</p>
+                    <p><strong>Hormon Perangsang Folikel (FSH)</strong>: Penting untuk pertumbuhan dan kematangan telur pada wanita dan penghasilan sperma pada lelaki.</p>
+                    <p><strong>Prolaktin</strong>: Hormon yang merangsang pengeluaran susu selepas melahirkan anak.</p>
+                    <p><strong>CEA (Antigen Karcinoembrionik)</strong>: Penanda yang boleh menunjukkan jenis kanser tertentu.</p>
+                    <p><strong>AFP (Alfa-fetoprotein)</strong>: Penanda yang digunakan untuk mengesan kanser hati dan penyakit lain.</p>
+                    <p><strong>CA 125</strong>: Penanda yang sering digunakan untuk mengesan kanser ovari.</p>
+                    <p><strong>CA 15-3</strong>: Penanda yang digunakan untuk memantau kanser payudara.</p>
+                    <p><strong>CA 19-9</strong>: Penanda yang digunakan terutamanya untuk memantau kanser pankreas.</p>
+                    <p><strong>Hs-CRP (Protein C-Reaktif Kepekaan Tinggi)</strong>: Penanda untuk keradangan dalam badan.</p>
+                    <p><strong>Homocysteine</strong>: Asid amino yang dikaitkan dengan risiko penyakit arteri koronari yang lebih tinggi。</p>
+                `;
+            }
+        }
+    </script>
+</body>
+</html>
