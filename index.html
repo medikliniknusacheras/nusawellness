@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IV Therapy Catalogue</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+        }
+        .header img {
+            max-width: 150px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+        .item img {
+            max-width: 100%;
+        }
+        .item h2 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .item .price {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .collapsible {
+            background-color: #f1f1f1;
+            color: #444;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+        }
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f9f9f9;
+        }
+        .faq, .booking {
+            margin-top: 20px;
+        }
+        .booking form input, .booking form select, .booking form button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .faq h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .faq h3 {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .video-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .video-container iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            border: none;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var coll = document.getElementsByClassName("collapsible");
+            for (var i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://i.imgur.com/5a9FfvH.png" alt="Clinic Logo">
+            <h1>Health. Anti-aging. Mind.</h1>
+            <h1>健康。抗衰老。心灵。</h1>
+        </div>
+
+        <div class="item">
+            <img src="https://3989ac5bcbe1edfc864a-0a7f10f87519dba22d2dbc6233a731e5.ssl.cf2.rackcdn.com/athleticrepublic/elite_blog_copy.jpg" alt="IV Energized Vitamin Drip">
+            <h2>IV Energized Vitamin Drip</h2>
+            <h2>IV能量维生素点滴</h2>
+            <p class="price">RM 388</p>
+            <button class="collapsible">Details / 详情</button>
+            <div class="content">
+                <p>This drip includes a combination of essential vitamins and minerals such as Vitamin C, B1/B2/B3/B5/B6/B7, Magnesium, Vitamin B12, and Calcium. It is designed to help overcome fatigue, reduce muscle pain (myalgia), and alleviate numbness, especially for diabetic patients. This drip also serves as an energy booster, making it ideal for those who need a quick pick-me-up.</p>
+                <p>此点滴包含基本的维生素和矿物质，如维生素C、B1/B2/B3/B5/B6/B7、镁、维生素B12和钙。它旨在帮助克服疲劳，减少肌肉疼痛（肌痛）和缓解麻木，特别是对糖尿病患者有益。此点滴还可以作为能量增强剂，非常适合需要快速提神的人。</p>
+            </div>
+        </div>
+        
+        <div class="item">
+            <img src="https://bsg-i.nbxc.com/product/59/a8/0e/8e688e9cfe89079bbc61ac3e22.jpg" alt="IV Placenta">
+            <h2>IV Placenta</h2>
+            <h2>IV胎盘点滴</h2>
+            <p class="price">RM 250</p>
+            <button class="collapsible">Details / 详情</button>
+            <div class="content">
+                <p>This IV therapy uses placenta extract, which is rich in nutrients and growth factors that help rejuvenate and revitalize the skin. It promotes cellular regeneration and enhances overall vitality, providing significant anti-aging benefits. Regular treatments can lead to improved skin texture, elasticity, and a more youthful appearance.</p>
+                <p>这种IV疗法使用胎盘提取物，富含营养物质和生长因子，有助于焕发和振兴肌肤。它促进细胞再生，增强整体活力，提供显著的抗衰老效果。定期治疗可以改善皮肤质地、弹性，使外观更加年轻。</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="https://www.botaniqua.co.uk/wp-content/uploads/2022/03/iv-drips-botaniqua-1.jpg" alt="Snow White Drip">
+            <h2>Snow White Drip</h2>
+            <h2>雪白点滴</h2>
+            <p class="price">RM 450</p>
+            <button class="collapsible">Details / 详情</button>
+            <div class="content">
+                <p>This drip contains Glutathione, Thiotic acid, and Vitamin C. It is formulated to brighten the skin, improve skin tone, and reduce signs of aging. Glutathione is a powerful antioxidant that helps detoxify the body and promote skin whitening. Thiotic acid supports cellular health, while Vitamin C enhances collagen production, resulting in a radiant and youthful complexion.</p>
+                <p>此点滴包含谷胱甘肽、硫辛酸和维生素C。它旨在美白皮肤，改善肤色，减少衰老迹象。谷胱甘肽是一种强效抗氧化剂，有助于排毒和美白皮肤。硫辛酸支持细胞健康，而维生素C增强胶原蛋白生成，从而使肤色光彩照人，显得年轻。</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="https://cdn-prod.medicalnewstoday.com/content/images/articles/320/320099/woman-with-a-cold.jpg" alt="Cold & Flu Drip">
+            <h2>Cold & Flu Drip</h2>
+            <h2>感冒和流感点滴</h2>
+            <p class="price">RM 388</p>
+            <button class="collapsible">Details / 详情</button>
+            <div class="content">
+                <p>This IV therapy combines IV fluids, Vitamin B Complex, Vitamin B12, Glutathione, and Zinc to boost the immune system and reduce cold and flu symptoms. It helps rehydrate the body, replenish essential vitamins, and support the immune response to fight off infections. This drip can shorten the duration of illness and improve overall recovery.</p>
+                <p>这种IV疗法结合IV液体、维生素B复合物、维生素B12、谷胱甘肽和锌，以增强免疫系统并减少感冒和流感症状。它帮助身体补水，补充基本维生素，并支持免疫反应以对抗感染。此点滴可以缩短疾病持续时间，并改善整体恢复。</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="https://img.etimg.com/thumb/msid-68941501,width-640,height-480,imgsize-719947,resizemode-4/healthy-liver-happy-you.jpg" alt="Liver Fresh Drip">
+            <h2>Liver Fresh Drip</h2>
+            <h2>清肝点滴</h2>
+            <p class="price">RM 488</p>
+            <button class="collapsible">Details / 详情</button>
+            <div class="content">
+                <p>This drip combines Glutathione, Amino acids, Vitamin B Complex, Vitamin C, and Folic acid to support liver detoxification and improve overall health. Glutathione is a potent antioxidant that helps cleanse the liver of toxins. Amino acids aid in the repair and regeneration of liver cells, while the Vitamin B Complex, Vitamin C, and Folic acid enhance metabolic processes and overall cellular function. This drip is ideal for those looking to support their liver health and improve their body's detoxification processes.</p>
+                <p>此点滴结合了谷胱甘肽、氨基酸、维生素B复合物、维生素C和叶酸，以支持肝脏排毒和改善整体健康。谷胱甘肽是一种强效抗氧化剂，有助于清除肝脏中的毒素。氨基酸有助于修复和再生肝细胞，而维生素B复合物、维生素C和叶酸则增强代谢过程和整体细胞功能。此点滴非常适合希望支持肝脏健康并改善身体排毒过程的人。</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="https://images.shiksha.com/mediadata/images/articles/1690284718phpoWwdGe.jpeg" alt="IV Bone Strengthening (Vitamin D3 Cholecalciferol)">
+            <h2>IV Bone Strengthening (Vitamin D3 Cholecalciferol)</h2>
+            <h2>骨骼强化点滴（维生素D3胆钙化醇）</h2>
+            <p class="price">RM 500</p>
+            <button class="collapsible">Details / 详情</button>
+            <div class="content">
+                <p>This drip provides a concentrated dose of Vitamin D3, essential for calcium absorption and bone health. It is particularly beneficial for menopausal women and the elderly who are at higher risk of osteoporosis and bone fractures. Regular IV Vitamin D3 therapy can help maintain strong bones, reduce the risk of fractures, and support overall skeletal health.</p>
+                <p>此点滴提供浓缩剂量的维生素D3，对钙的吸收和骨骼健康至关重要。它特别有益于更年期妇女和老年人，这些人更容易患骨质疏松症和骨折。定期进行IV维生素D3治疗可以帮助保持骨骼强壮，减少骨折风险，并支持整体骨骼健康。</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="https://www.vitastir.com/wp-content/uploads/2022/07/Nad-scaled.jpg" alt="IV Fountain of Youth (NAD +)">
+            <h2>IV Fountain of Youth (NAD +)</h2>
+            <h2>青春之泉点滴（NAD +）</h2>
+            <p class="price">RM 2000</p>
+            <button class="collapsible">Details / 详情</button>
+            <div class="content">
+                <p>This premium IV therapy provides Nicotinamide Adenine Dinucleotide (NAD+), a coenzyme crucial for energy production and cellular repair. NAD+ therapy is popular among celebrities for its anti-aging benefits, including improved mental clarity, increased energy levels, and enhanced cellular function. It is also used to support recovery from chronic fatigue, addiction, and long COVID syndrome. Regular treatments can help rejuvenate the body and promote overall well-being.</p>
+                <p>这种高级IV疗法提供烟酰胺腺嘌呤二核苷酸（NAD+），一种对能量生产和细胞修复至关重要的辅酶。NAD+疗法因其抗衰老功效而在名人中很受欢迎，包括改善精神清晰度、增加能量水平和增强细胞功能。它还用于支持从慢性疲劳、成瘾和长期COVID综合症的恢复。定期治疗可以帮助重焕身体活力并促进整体健康。</p>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/Fdt-AaxfI8Y?si=Zf2jgU5iuMR46IJN" allowfullscreen></iframe>
+        </div>
+
+        <div class="faq">
+            <h2>FAQ / 常见问题</h2>
+            
+            <p><strong>Q: What are IV therapies? / 问：什么是IV治疗？</strong></p>
+            <p>A: IV therapies involve the administration of vitamins, minerals, and other nutrients directly into the bloodstream for rapid absorption and effectiveness. / 答：IV治疗是指将维生素、矿物质和其他营养物质直接输送到血液中，以便快速吸收和有效发挥作用。</p>
+            
+            <p><strong>Q: What are the benefits of IV therapies? / 问：IV治疗有哪些好处？</strong></p>
+            <p>A: Benefits include improved energy levels, enhanced immune function, better skin health, and faster recovery from illnesses. / 答：好处包括提高能量水平、增强免疫功能、改善皮肤健康以及更快地从疾病中恢复。</p>
+            
+            <p><strong>Q: Are there any side effects? / 问：有没有副作用？</strong></p>
+            <p>A: Side effects are rare but may include allergic reactions, infection at the injection site, or vein inflammation. It's essential to consult with a healthcare provider before starting treatment. / 答：副作用很少见，但可能包括过敏反应、注射部位感染或静脉炎。开始治疗前咨询医疗提供者是很重要的。</p>
+            
+            <p><strong>Q: How effective are IV therapies? / 问：IV治疗有多有效？</strong></p>
+            <p>A: Many patients report positive effects, but scientific evidence is mixed. Some studies support the benefits for specific deficiencies, but more research is needed to confirm widespread efficacy. / 答：许多患者报告了积极效果，但科学证据是混合的。一些研究支持对特定缺乏症的好处，但需要更多研究来确认广泛的效果。</p>
+            
+            <p><strong>Q: How long does an IV therapy session take? / 问：IV治疗疗程需要多长时间？</strong></p>
+            <p>A: Most IV therapy sessions take between 30 to 60 minutes, depending on the type of infusion and individual patient needs. / 答：大多数IV治疗疗程需要30到60分钟，具体时间取决于输液类型和个人需求。</p>
+            
+            <p><strong>Q: How often should I get IV therapy? / 问：我应该多久进行一次IV治疗？</strong></p>
+            <p>A: The frequency of IV therapy depends on your individual health goals and needs. Some people benefit from weekly sessions, while others may only need monthly treatments. Consult with a healthcare provider to determine the best plan for you. / 答：IV治疗的频率取决于您的个人健康目标和需求。有些人每周进行一次疗程会受益，而其他人可能只需要每月治疗一次。请咨询医疗提供者以确定最适合您的计划。</p>
+            
+            <p><strong>Q: Is IV therapy safe? / 问：IV治疗安全吗？</strong></p>
+            <p>A: IV therapy is generally safe when administered by trained professionals. However, it is important to discuss your medical history and any concerns with your healthcare provider before starting treatment. / 答：IV治疗在经过培训的专业人员的操作下通常是安全的。然而，在开始治疗之前，与您的医疗提供者讨论您的病史和任何担忧是很重要的。</p>
+            
+            <p><strong>Q: Can anyone get IV therapy? / 问：任何人都可以进行IV治疗吗？</strong></p>
+            <p>A: Most people can benefit from IV therapy, but it may not be suitable for everyone. Those with certain medical conditions or allergies should consult with a healthcare provider to ensure it is safe for them. / 答：大多数人都可以从IV治疗中受益，但并非每个人都适合。有某些医疗状况或过敏的人应咨询医疗提供者，以确保对他们是安全的。</p>
+        </div>
+
+        <div class="booking">
+            <h2>Booking / 预约</h2>
+            <form action="https://wa.me/60122429975" method="post" onsubmit="sendWhatsAppMessage(event)">
+                <input type="text" id="name" name="name" placeholder="Name / 姓名" required>
+                <input type="number" id="age" name="age" placeholder="Age / 年龄" required>
+                <input type="text" id="allergy" name="allergy" placeholder="Allergy / 过敏" required>
+                <input type="date" id="preferable_date" name="preferable_date" placeholder="Preferable Date / 优选日期" required>
+                <select id="product_selection" name="product_selection" required>
+                    <option value="IV Energized Vitamin Drip">IV Energized Vitamin Drip - RM 388</option>
+                    <option value="IV Placenta">IV Placenta - RM 250</option>
+                    <option value="Snow White Drip">Snow White Drip - RM 450</option>
+                    <option value="Cold & Flu Drip">Cold & Flu Drip - RM 388</option>
+                    <option value="Liver Fresh Drip">Liver Fresh Drip - RM 488</option>
+                    <option value="IV Bone Strengthening (Vitamin D3 Cholecalciferol)">IV Bone Strengthening (Vitamin D3 Cholecalciferol) - RM 500</option>
+                    <option value="IV Fountain of Youth (NAD +)">IV Fountain of Youth (NAD +) - RM 2000</option>
+                </select>
+                <button type="submit">Submit / 提交</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function sendWhatsAppMessage(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const age = document.getElementById('age').value;
+            const allergy = document.getElementById('allergy').value;
+            const preferableDate = document.getElementById('preferable_date').value;
+            const productSelection = document.getElementById('product_selection').value;
+
+            const message = `Name: ${name}%0AAge: ${age}%0AAllergy: ${allergy}%0APreferable Date: ${preferableDate}%0AProduct Selection: ${productSelection}`;
+
+            window.open(`https://wa.me/60122429975?text=${message}`, '_blank');
+        }
+    </script>
+</body>
+</html>
